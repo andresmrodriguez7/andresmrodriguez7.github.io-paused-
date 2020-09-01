@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 4vw 6vw 4vw 4vw;
+    background-color: $bg-primary;
+    
+
+    // posicion logo
+    .logo_menu {
+        width: 100px;
+        height: 80px;
+        margin-top: -10px;
+    }
+
+    // posicion y funcionamiento menu hamburguesa
+    #menu_checker {
+        display: none;
+    }
+    #menu_close {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+        background-color: $bg-menu;
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding-left: 3%;
+            margin: 0;
+            li {
+                text-transform: uppercase;
+                text-align: left;
+                line-height: 28px;
+                letter-spacing: 0;
+                margin: 2px 19px;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: $font-light;
+                    font-family: $font-primary;
+                }
+            }
+        }
+    }
+
+    #menu_checker:checked ~ #menu_open {
+        display: none;
+        margin-right: 0;
+        width: 0;
+        height: 0;
+    }
+    #menu_checker:checked ~ #menu_close {
+        display: block;
+    }
+
+    #menu_checker:checked ~ #menu {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        width: 100%;
+        z-index: 100;
+    }
+}

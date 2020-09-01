@@ -1,0 +1,317 @@
+main {
+    //posicionamiento y estilo de la descripcion
+    #description {
+        padding-left: 6.9vw;
+        padding-top: 120px;
+        width: 100vw;
+        h1 {
+            line-height: 84px;
+            font-size: 64px;
+            width: auto;
+            color: $font-dark;
+            margin-top: 0;
+            #dot {
+                color: $font-dot;
+                font-size: 64px;
+            }
+        }
+        .descripcion {
+            line-height: 28px;
+            font-size: 22px;
+            width: 800px;
+            height: 48px;
+            margin-top: 20px;
+        }
+        .descripcion::before {
+            content: " ";
+        }
+        .social_media_icon_cont {
+            position: fixed;
+            top: 30px;
+            width: 300px;
+            padding-right: 15px;
+            margin: 0;
+            width: auto;
+            height: auto;
+            .social-icon {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                width: auto;
+                height: 250px;
+                margin-left: -100px;
+                a {
+                    text-decoration-color: none;
+                    i {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+        //posicionamiento y estilo del boton "inscribete"
+        .btn-primary1 {
+            margin-top: 56px;
+            width: 226px;
+            height: 56px;
+            border-radius: 5px;
+            .text-btn-primary {
+                margin-top: 15px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    // seccion de eventos y noticias
+    .bg-seccion-eventos {
+        height: 1042.5px;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-image: linear-gradient(225deg, $bg-gradient-top 0%, $bg-gradient-bottom 100%);
+        //titulo de seccion noticias
+        .titulo {
+            margin-bottom: 2.5vw;
+            font-size: 50px;
+            line-height: 45px;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+        .seccion-eventos {
+            margin: 0 10% 0 5%;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 100%;
+            border-radius: 2px;
+            box-sizing: border-box;
+            .video {
+                align-content: stretch;
+                border-radius: 5px;
+                width: 95%;
+                height: 600px;
+            }
+            //contenedor de los eventos
+            #event-container {
+                padding: 0 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: $font-light;
+                font-family: $font-title;
+                font-size: 16px;
+                line-height: 25px;
+                h2 {
+                    color: $font-light;
+                    font-family: $font-title;
+                    font-size: 25px;
+                    line-height: 25px;
+                    font-weight: 800;
+                    width: 100%;
+                    padding: 3px 0px;
+                    border-bottom: solid;
+                    border-bottom-style: solid white;
+                    border-bottom-width: 3px;
+                    margin-top: 0;
+                }
+                #evento {
+                    padding: 10px 0px 10px 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    width: 100%;
+                    box-sizing: border-box;
+                    line-height: 25px;
+                    .fecha {
+                        background-color: rgb(207, 180, 134);
+                        width: 85px;
+                        height: 100px;
+                        font-size: 20px;
+                        line-height: 25px;
+                        text-align: center;
+                        letter-spacing: 2px;
+                        color: rgb(61, 45, 18);
+                        font-family: Times, "Times New Roman", serif;
+                        span {
+                            font-size: 50px;
+                            line-height: 50px;
+                        }
+                    }
+                    .info p {
+                        margin: 0;
+                    }
+                    .info p:first-child {
+                        font-weight: 800;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    // seccion nuestra musica
+    .bg-seccion-nosotros {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100vw;
+        height: 500px;
+        padding-left: 50px;
+        padding-right: 0;
+        box-sizing: border-box;
+        margin-top: 80px;
+        .donde_venimos {
+            width: 30%;
+            height: auto;
+            margin: 20.4px 0 0 0;
+            box-sizing: border-box;
+            .titulo_seccion_dark1 {
+                margin-left: 0;
+                width: 60%;
+                font-family: $font-title;
+                font-size: 48px;
+                font-weight: 600;
+                color: $font-dark;
+                margin-top: 10px;
+            }
+            p {
+                margin-left: 0;
+                width: auto;
+                height: auto;
+                margin: 0;
+                font-weight: 300;
+            }
+        }
+        #podcast {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 15vw 15vw;
+            column-gap: 30px;
+            row-gap: 30px;
+            width: 65%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-right: 30px;
+            div {
+                width: 100%;
+                height: 100%;
+                .song {
+                    width: 100%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    // seccion de invitados estelares
+    .invitados {
+        margin-top: 64px;
+        box-sizing: border-box;
+        margin-left: 100px;
+        .titulo_seccion_dark2 {
+            margin-bottom: 2.5vw;
+            margin-left: 0;
+            width: 481px;
+            font-size: 48px;
+            line-height: 62px;
+        }
+        .galeria {
+            display: grid;
+            margin: auto;
+            width: 70%;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 21vw);
+            img {
+                width: 23vw;
+                height: 21vw;
+            }
+        }
+    }
+    // seccion alguno de nuestros temas
+    .temas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        margin-bottom: 34px;
+        width: 100%;
+        .titulo_seccion_dark3 {
+            width: 586px;
+            font-size: 48px;
+            line-height: 62px;
+            margin-left: 100px;
+        }
+        .iconos {
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 260px);
+            grid-template-rows: repeat(1, 200px 64px);
+            row-gap: 29px;
+            grid-auto-flow: column;
+            grid-auto-rows: auto;
+            img {
+                width: 200px;
+                height: 200px;
+                margin: 0;
+            }
+            p {
+                width: 220px;
+                margin: 0;
+            }
+        }
+    }
+    // sección de ultimas novedades
+    .bg-seccion-novedades {
+        padding: 213px 0 141px 0;
+        width: 100vw;
+        height: 36vw;
+        .titulo_seccion_light {
+            width: 692px;
+            font-size: 36px;
+            line-height: 42px;
+            font-size: 48px;
+            line-height: 62px;
+        }
+        .btn-primary {
+            width: 345px;
+            height: 56px;
+            .text-btn-primary {
+                margin-top: 17px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+             ::after {
+                content: " LOS EPISODIOS";
+            }
+        }
+    }
+    .ubicacion {
+        margin: 0 0 100px 0;
+        h2 {
+            width: 586px;
+            font-size: 48px;
+            line-height: 62px;
+            margin-left: 100px;
+        }
+        .mapa-container {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            #mapa {
+                width: 70vw;
+                box-shadow: 0px 5px 15px 1px gray;
+            }
+        }
+    }
+    footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 0px 6.944vw 31px 6.944vw;
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+}
