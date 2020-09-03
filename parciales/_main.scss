@@ -61,7 +61,7 @@ main {
                 }
             }
         }
-        //posicionamiento y estilo del boton "conoce mas"
+        //posicionamiento y estilo del boton "inscribete"
         .btn-primary1 {
             width: 90vw;
             height: 48px;
@@ -70,13 +70,13 @@ main {
             background-color: $bg-button;
             vertical-align: middle;
             border-radius: 5px;
+            color: $font-dark;
             .text-btn-primary {
                 text-align: center;
                 margin-top: 12px;
                 letter-spacing: 0px;
                 font-style: italic;
                 font-family: $font-title;
-                color: $font-dark;
                 font-weight: 800;
                 font-size: 22px;
                 line-height: 22px;
