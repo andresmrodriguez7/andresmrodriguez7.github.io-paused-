@@ -1,246 +1,255 @@
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 4vw 6vw 4vw 4vw;
-  background-color: #FFFFFF;
-}
-
-header .logo_menu {
-  width: 100px;
-  height: 80px;
-  margin-top: -10px;
-}
-
-header #menu_checker {
-  display: none;
-}
-
-header #menu_close {
-  display: none;
-}
-
-header #menu {
-  display: none;
-  background-color: #0000FF;
-}
-
-header #menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-left: 3%;
-  margin: 0;
-}
-
-header #menu ul li {
-  text-transform: uppercase;
-  text-align: left;
-  line-height: 28px;
-  letter-spacing: 0;
-  margin: 2px 19px;
-  list-style: none;
-}
-
-header #menu ul li a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: "Roboto Slab", "IBM Plex Mono", monospace;
-}
-
-header #menu_checker:checked~#menu_open {
-  display: none;
-  margin-right: 0;
-  width: 0;
-  height: 0;
-}
-
-header #menu_checker:checked~#menu_close {
-  display: block;
-}
-
-header #menu_checker:checked~#menu {
-  display: block;
-  position: absolute;
-  top: 70px;
-  left: 0px;
-  width: 100%;
-  z-index: 100;
-}
-
-#contenedor-principal h1, h2 {
-  font-family: "IBM Plex Sans", monospace;
-  font-weight: 800;
-  font-size: 4em;
-}
-
-#contenedor-principal p {
-  font-family: "IBM Plex Sans", monospace;
-  font-weight: 600;
-  
-}
-.text-center  {
-  box-sizing: border-box;
-  font-size: 1em;
-  width: 100%;
-  padding: 0;
-  background-image: linear-gradient(225deg, #c61e72 0%, #ed8636 100%);
-  color: white;
-  padding: 20px 0;
-}
-.text-center .text-muted{
-  position: relative;
-  color: white!important;
-}
-
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron h1 {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-}
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-footer p {
-  margin-bottom: .25rem;
-}
-
-@media screen and (min-width: 1023px) {
-  header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: 50px 100px 30px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100vw;
-  }
-  header .logo_menu {
-    margin-top: -40px;
-    margin-left: 0;
-    width: 170px;
-    height: 150px;
-  }
-  header #menu_checker {
-    display: none;
-  }
-  header #menu_close {
-    display: none;
-  }
-  header #menu_open {
-    display: none;
-  }
-  header #menu {
-    display: inline-block;
-    width: auto;
-    background-color: #FFFFFF;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  header #menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 4vw 6vw 0vw 4vw;
+    background-color: #FFFFFF;
+}
+
+header .logo_menu {
+    width: 130px;
+    height: 110px;
+    margin-top: -10px;
+}
+
+header #menu_checker {
+    display: none;
+}
+
+header #menu_close {
+    display: none;
+}
+
+header #menu_open {
+    font-size: 1.5em;
+}
+
+header #menu {
+    display: none;
+    background-color: #001121;
+}
+
+header #menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  header #menu ul li {
+    padding-left: 0;
+    margin: 0;
+}
+
+header #menu ul li {
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     line-height: 28px;
     letter-spacing: 0;
-    margin: 2px 19px;
-    font-size: 1.5vw;
     list-style: none;
-  }
-  header #menu ul li a {
+    border-top: solid rgba(128, 128, 128, 0.5) 1px;
+}
+
+header #menu ul li a {
     text-decoration: none;
-    color: #060A24;
-    font-family: "Roboto Slab", "IBM Plex Mono", monospace;
+    color: #FFFFFF;
+    font-family: "IBM Plex Sans", sans-serif;
     font-weight: bold;
-  }
-  header #menu ul li a:hover {
-    text-shadow: 0px 0px 5px gray;
-  }
+    letter-spacing: 1px;
+}
 
-  .jumbotron {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin-bottom: 0;
-    background-color: #fff;
-  }
+header #menu ul li a:hover {
+    color: gray;
+}
 
-  .jumbotron h1{
-    font-family:"Pacifico", cursive!important;
-    font-weight: 100;
-  }
-  .text-center {
-    position: relative;
-    background-image: url("./imagenes/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+header #menu_checker:checked~#menu_open {
+    display: none;
+    margin-right: 0;
+    width: 0;
+    height: 0;
+}
+
+header #menu_checker:checked~#menu_close {
+    display: block;
+    font-size: 1.5em;
+}
+
+header #menu_checker:checked~#menu {
+    display: block;
+    position: absolute;
+    top: 95px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+#contenedor-principal h1,
+h2 {
+    font-family: "IBM Plex Sans", monospace;
+    font-weight: 800;
+    font-size: 4em;
+}
+
+#contenedor-principal p {
+    font-family: "IBM Plex Sans", monospace;
+    font-weight: 600;
+}
+
+.text-center {
+    box-sizing: border-box;
+    font-size: 1em;
+    width: 100%;
+    padding: 0;
+    background-image: linear-gradient(225deg, #c61e72 0%, #ed8636 100%);
     color: white;
-    width: 74%;
-    margin: auto;
-    height: 25vw;
-  }
-  .text-center h1{
-    position: relative;
-    color: whitesmoke;
-    font-size: 3em;  
-  }
-  .text-center .text-muted{
+    padding: 20px 0;
+}
+
+.text-center .text-muted {
     position: relative;
     color: white!important;
-    font-size: 1.5em;
-  }
-  .text-center:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron h1 {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+@media screen and (min-width: 1023px) {
+    header {
+        padding: 50px 100px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+    header .logo_menu {
+        margin-top: -40px;
+        margin-left: 0;
+        width: 170px;
+        height: 150px;
+    }
+    header #menu_checker {
+        display: none;
+    }
+    header #menu_close {
+        display: none;
+    }
+    header #menu_open {
+        display: none;
+    }
+    header #menu {
+        display: inline-block;
+        width: auto;
+        background-color: #FFFFFF;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    header #menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    header #menu ul li {
+        text-transform: uppercase;
+        text-align: left;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin: 2px 19px;
+        font-size: 1.5vw;
+        border-top: none;
+    }
+    header #menu ul li a {
+        text-decoration: none;
+        color: #060A24;
+        font-family: "Roboto Slab", "IBM Plex Mono", monospace;
+        font-weight: bold;
+    }
+    header #menu ul li a:hover {
+        text-shadow: 0px 0px 5px gray;
+        color: #060A24;
+    }
+    .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+        background-color: #fff;
+    }
+    .jumbotron h1 {
+        font-family: "Pacifico", cursive!important;
+        font-weight: 100;
+    }
+    .text-center {
+        position: relative;
+        background-image: url("./imagenes/fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: white;
+        width: 74%;
+        margin: auto;
+        height: 25vw;
+    }
+    .text-center h1 {
+        position: relative;
+        color: whitesmoke;
+        font-size: 3em;
+    }
+    .text-center .text-muted {
+        position: relative;
+        color: white!important;
+        font-size: 1.5em;
+    }
+    .text-center:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
