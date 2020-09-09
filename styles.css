@@ -684,8 +684,8 @@ main footer .disclaimer p:first-child {
     font-weight: bold;
   }
   header #menu ul li a:hover {
-    text-shadow: 0px 0px 5px gray;
-    color: #060A24;
+    text-shadow: 0px 0px 1px gray;
+    color: #5e2129;
   }
   main .roller-container {
     display: block;
@@ -825,6 +825,7 @@ main footer .disclaimer p:first-child {
     margin-top: 15px;
     font-size: 18px;
     line-height: 24px;
+    font-weight: 700;
   }
   main .bg-seccion-eventos {
     height: 1042.5px;

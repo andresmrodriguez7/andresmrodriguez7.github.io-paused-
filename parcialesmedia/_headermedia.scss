@@ -43,8 +43,8 @@ header {
                     font-family: $font-primary;
                     font-weight: bold;
                     &:hover {
-                        text-shadow: 0px 0px 5px gray;
-                        color: $font-dark;
+                        text-shadow: 0px 0px 1px gray;
+                        color: #5e2129;
                     }
                 }
             }
