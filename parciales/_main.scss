@@ -4,6 +4,9 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+    .roller-container {
+        display: none;
+    }
     //posicionamiento y estilo de la descripcion
     #description {
         display: flex;
