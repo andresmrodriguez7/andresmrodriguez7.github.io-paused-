@@ -707,12 +707,12 @@ main footer .disclaimer p:first-child {
             justify-content: space-between;
   }
   main .roller-container .roller-flex-column .roller {
-    width: 40%;
+    width: 50%;
     height: 45px;
     margin: 1px 0;
     border-radius: 0 20px 20px 0;
     padding: 0 2% 0 3%;
-    margin-left: -31%;
+    margin-left: -40%;
   }
   main .roller-container .roller-flex-column .roller .roller-inner {
     display: -webkit-box;

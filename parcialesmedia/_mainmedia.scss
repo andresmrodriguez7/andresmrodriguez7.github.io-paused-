@@ -10,12 +10,12 @@ main {
             flex-flow: column nowrap;
             justify-content: space-between;
             .roller {
-                width: 40%;
+                width: 50%;
                 height: 45px;
                 margin: 1px 0;
                 border-radius: 0 20px 20px 0;
                 padding: 0 2% 0 3%;
-                margin-left: -31%;
+                margin-left: -40%;
                 .roller-inner {
                     display: flex;
                     flex-flow: row nowrap;
